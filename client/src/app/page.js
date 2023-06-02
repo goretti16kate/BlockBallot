@@ -255,9 +255,9 @@ export default function Home() {
 
           <div className={styles.container_inner}>
             {candidates.map((candidate) => (
-              <div className={styles.gradient_cards}>
+              <div className={styles.gradient_cards} key={candidate.id}>
                 {/* start candidate card */}
-                <div className={styles.card} key={candidate.id}>
+                <div className={styles.card} >
                   <div className={styles.container_card}>
                     <p className={styles.card_title}>{candidate.name}</p>
                     <p className={styles.card_description}>
